@@ -1,0 +1,18 @@
+city:
+  path: https://api.musement.com/api/v3/cities?limit=20
+  print:
+    url: url
+    priority: 0.7
+  iterate:
+    obj: _root
+    use: activity
+    params:
+      - id
+
+activity:
+  path: https://api.musement.com/api/v3/cities/{}/activities?limit=20
+  print:
+    url: 0.url
+    priority: 0.5
+  iterate:
+    obj: _root

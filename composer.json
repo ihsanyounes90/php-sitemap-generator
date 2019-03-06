@@ -1,7 +1,7 @@
 {
-  "name": "icamys/php-sitemap-generator",
+  "name": "yo/api-to-sitemap",
   "version": "1.0.1",
-  "description": "Simple PHP sitemap generator.",
+  "description": "Sitemap generator from REST API.",
   "keywords": ["php", "sitemap", "generator", "psr-1", "psr-2", "psr-4"],
   "homepage": "https://github.com/icamys/php-sitemap-generator",
   "type": "library",
@@ -9,16 +9,19 @@
   "minimum-stability": "stable",
   "authors": [
     {
-      "name": "Prisacari Dmitrii",
-      "email": "prisacari.dmitrii@gmail.com",
+      "name": "Ihsan Younes",
+      "email": "ihsanyounes90@gmail.com",
       "homepage": "http://github.com/icamys/"
     }
   ],
   "require": {
     "php": ">=5.5.0",
-    "ext-SPL": "*"
+    "ext-SPL": "*",
+    "guzzlehttp/guzzle": "~6.0",
+    "ext-yaml": "*",
+    "aws/aws-sdk-php": "^3.88"
   },
   "autoload": {
-    "psr-4": {"Icamys\\SitemapGenerator\\": "src/"}
+    "psr-4": {"Yo\\": "src/"}
   }
 }
